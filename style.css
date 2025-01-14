@@ -69,6 +69,59 @@ nav ul li:hover{
 }
 /* header ends here */
 
+/* blog banner section */
+#blog-banner-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 1rem;
+    min-height: 95vh;
+}
+.banner__heading{
+    display: inline-block;
+    background-color: black;
+    padding: 1rem;
+    color: #fff;
+}
+.banner article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+.banner aside{
+    flex-basis: 50%;
+}
+.banner__image{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+
+/* blog banner section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsiveness starts here */
 @media screen and (max-width: 992px){
     
