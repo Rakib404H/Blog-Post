@@ -23,6 +23,12 @@ body {
     margin: auto;
     box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0.1rem 0.1rem #c4c4c4;
 }
+.text-justify{
+    text-align: justify;
+}
+.text-white{
+    color: white;
+}
 
 /* reset and common codes starts here */
 
@@ -82,6 +88,10 @@ nav ul li:hover{
     background-color: black;
     padding: 1rem;
     color: #fff;
+    margin-bottom: 1.5rem;
+}
+.banner__description{
+    font-size: 1.8rem;
 }
 .banner article{
     flex-basis: 50%;
@@ -124,7 +134,12 @@ nav ul li:hover{
 
 /* responsiveness starts here */
 @media screen and (max-width: 992px){
-    
+    .banner{
+        flex-direction: column;
+    }
+    .banner article{
+        width: 50%;
+    }
 }
 @media screen and (max-width: 768px){
     html{
