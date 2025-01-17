@@ -29,7 +29,12 @@ body {
 .text-white{
     color: white;
 }
+.section-center{
 
+}
+.section-heading{
+
+}
 /* reset and common codes starts here */
 
 /* header starts here */
@@ -75,7 +80,7 @@ nav ul li:hover{
 }
 /* header ends here */
 
-/* blog banner section */
+/* blog banner section starts*/
 #blog-banner-section{
     display: flex;
     justify-content: center;
@@ -89,6 +94,7 @@ nav ul li:hover{
     padding: 1rem;
     color: #fff;
     margin-bottom: 1.5rem;
+    font-size: 4rem;
 }
 .banner__description{
     font-size: 1.8rem;
@@ -106,27 +112,34 @@ nav ul li:hover{
     border: 0.3rem solid;
 }
 
-/* blog banner section */
+/* blog banner section ends*/
 
+/* about me section starts here */
+#blog-about{
+    height: 100vh;
+    background-color: #c4c4c4;
+}
+.cards{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 1rem;
+    align-items: center;
+}
+.card{
+    /* margin: 2rem; */
+    flex: 1;
+    border-radius: 0.6rem;
+    background-color: #a09d9d;
+    padding: 3rem 1rem;
+    margin: 2rem;
+}
+.card__header{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.card__description{
+    
+}
+/* about me section ends here */
 
 
 
@@ -139,11 +152,18 @@ nav ul li:hover{
     }
     .banner article{
         width: 50%;
-    }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    } 
 }
 @media screen and (max-width: 768px){
     html{
         font-size: 55.5%;
+    }
+    .banner article{
+        width: 80%;
     }
 }
 @media screen and (max-width: 600px){
@@ -156,6 +176,15 @@ nav ul li:hover{
     }
     header{
         flex-direction: column;
+    }
+    .banner{
+    min-height: auto;
+    }
+    .banner article{
+        width: 90%;
+    }
+    .banner__image{
+        width: 90%;
     }
 }
 /* responsiveness ends here */
