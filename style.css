@@ -21,20 +21,38 @@ body {
     width: 100rem;
     max-width: 100%;
     margin: auto;
-    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0.1rem 0.1rem #c4c4c4;
+    box-shadow: .1rem .1rem .1rem #c4c4c4, -0.1rem .1rem .1rem #c4c4c4;
 }
-.text-justify{
+
+.text-justify {
     text-align: justify;
 }
-.text-white{
+
+.text-white {
     color: white;
 }
-.section-center{
 
+.btn {
+    background-color: rgb(230, 159, 8);
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
 }
-.section-heading{
 
+.section-center {}
+
+.section-heading {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 /* reset and common codes starts here */
 
 /* header starts here */
@@ -65,30 +83,35 @@ nav ul {
     align-items: center; */
     gap: 2rem;
 }
-nav ul li{
+
+nav ul li {
     padding: 1rem;
     transition: all 0.4s;
 }
-nav ul li:hover{
+
+nav ul li:hover {
     background-color: brown;
-    border-radius: 0.6rem;
+    border-radius: .6rem;
 }
-.nav__link{
+
+.nav__link {
     font-size: 1.8rem;
     color: #fff;
     cursor: pointer;
 }
+
 /* header ends here */
 
 /* blog banner section starts*/
-#blog-banner-section{
+#blog-banner-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5rem 1rem;
     min-height: 95vh;
 }
-.banner__heading{
+
+.banner__heading {
     display: inline-block;
     background-color: black;
     padding: 1rem;
@@ -96,95 +119,150 @@ nav ul li:hover{
     margin-bottom: 1.5rem;
     font-size: 4rem;
 }
-.banner__description{
+
+.banner__description {
     font-size: 1.8rem;
 }
-.banner article{
+
+.banner article {
     flex-basis: 50%;
     margin: 1rem;
 }
-.banner aside{
+
+.banner aside {
     flex-basis: 50%;
 }
-.banner__image{
+
+.banner__image {
     width: 55rem;
     height: 55rem;
-    border: 0.3rem solid;
+    border: .3rem solid;
 }
 
 /* blog banner section ends*/
 
 /* about me section starts here */
-#blog-about{
-    height: 100vh;
+#blog-about {
+    height: 95vh;
     background-color: #c4c4c4;
-}
-.cards{
     display: flex;
-    /* justify-content: space-around; */
-    gap: 1rem;
+    flex-direction: column;
+    /* justify-content: center; */
     align-items: center;
 }
-.card{
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.card {
     /* margin: 2rem; */
     flex: 1;
-    border-radius: 0.6rem;
+    border-radius: .6rem;
     background-color: #a09d9d;
     padding: 3rem 1rem;
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    align-items: center;
+    text-align: justify;
+    transition: all 0.3s;
 }
-.card__header{
 
+.card:hover {
+    transform: scale(1.1);
 }
-.card__description{
-    
+
+.card__header {
+    font-size: 3rem;
 }
+
+.card__description {
+    padding: 0.4rem 0;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.card__btn {
+    width: 80%;
+    padding: ;
+}
+
 /* about me section ends here */
 
+/* archive section starts here  */
 
-
-
+/* archive section ends here  */
 
 /* responsiveness starts here */
-@media screen and (max-width: 992px){
-    .banner{
+@media screen and (max-width: 992px) {
+    .banner {
         flex-direction: column;
     }
-    .banner article{
+
+    .banner article {
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 5rem;
-    } 
+    }
 }
-@media screen and (max-width: 768px){
-    html{
+
+@media screen and (max-width: 768px) {
+    html {
         font-size: 55.5%;
     }
-    .banner article{
+
+    .banner article {
+        width: 80%;
+    }
+
+    .cards {
+        flex-direction: column;
         width: 80%;
     }
 }
-@media screen and (max-width: 600px){
-    html{
+
+@media screen and (max-width: 600px) {
+    html {
         font-size: 48.5%;
     }
-    nav ul{
+
+    nav ul {
         flex-direction: column;
         padding-left: 2.5rem;
     }
-    header{
+
+    header {
         flex-direction: column;
     }
-    .banner{
-    min-height: auto;
+
+    .banner {
+        min-height: auto;
     }
-    .banner article{
+
+    .banner article {
         width: 90%;
     }
-    .banner__image{
+
+    .banner__image {
+        max-width: 100%;
+    }
+
+    .cards {
+
         width: 90%;
+    }
+
+    #blog-about {
+        min-height: auto;
     }
 }
+
 /* responsiveness ends here */
